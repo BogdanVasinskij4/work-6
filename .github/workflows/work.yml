@@ -90,3 +90,29 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+class MyList:
+    def __init__(self):
+        self.my_list = []
+
+    # Додати елемент в кінець списку
+    def add_to_end(self, element):
+        self.my_list.append(element)
+    
+    # Додати елемент на початок списку
+    def add_to_start(self, element):
+        self.my_list.insert(0, element)
+
+    # Вивести список
+    def show_list(self):
+        return self.my_list
+
+# Тестування
+my_list = MyList()
+
+# Додавання елементів
+my_list.add_to_end(5)
+my_list.add_to_end(10)
+my_list.add_to_start(2)
+
+# Виведення списку
+print(my_list.show_list())  # Результат: [2, 5, 10]
